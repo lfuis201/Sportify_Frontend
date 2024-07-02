@@ -1,0 +1,81 @@
+<div class="container">
+
+  <h1 class="text-3xl font-bold mb-4">Administración</h1>
+
+  <!-- Formulario para Crear/Actualizar Deporte -->
+  <h2 class="text-xl font-bold mb-2">Deporte</h2>
+  <form class="mb-4" (ngSubmit)="onSubmitDeporte()">
+    <label for="deporte-nombre">Nombre:</label>
+    <input type="text" id="deporte-nombre" [(ngModel)]="selectedDeporte.nombre" name="nombre">
+
+    <label for="deporte-descripcion">Descripción:</label>
+    <textarea id="deporte-descripcion" [(ngModel)]="selectedDeporte.descripcion" name="descripcion"></textarea>
+
+    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+      {{ isUpdatingDeporte ? 'Actualizar' : 'Crear' }}
+    </button>
+  </form>
+
+  <h2 class="text-xl font-bold mb-2">Lista de Deportes</h2>
+  <ul>
+    <li *ngFor="let deporte of deportes" (click)="selectDeporte(deporte)" class="bg-white shadow-md p-4 mb-4 rounded">
+      {{ deporte.nombre }}
+      <div>
+        <button (click)="verDeporte(deporte)" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded ml-2">
+          Ver
+        </button>
+        <button (click)="editarDeporte(deporte)" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded ml-2">
+          Editar
+        </button>
+        <button (click)="deleteDeporte(deporte.id)" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded ml-2">
+          Eliminar
+        </button>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Formulario para Crear/Actualizar Entrenador -->
+  <h2 class="text-xl font-bold mb-2">Entrenador</h2>
+  <form class="mb-4" (ngSubmit)="onSubmitEntrenador()">
+    <label for="entrenador-nombre">Nombre:</label>
+    <input type="text" id="entrenador-nombre" [(ngModel)]="selectedEntrenador.nombre" name="nombre">
+
+    <label for="entrenador-apellido">Apellido:</label>
+    <input type="text" id="entrenador-apellido" [(ngModel)]="selectedEntrenador.apellido" name="apellido">
+
+    <label for="entrenador-especialidad">Especialidad:</label>
+    <select id="entrenador-especialidad" [(ngModel)]="selectedEntrenador.especialidad" name="especialidad"
+            class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+      <option *ngFor="let deporte of deportes" [value]="deporte.id">{{ deporte.nombre }}</option>
+    </select>
+
+    <label for="entrenador-email">Email:</label>
+    <input type="email" id="entrenador-email" [(ngModel)]="selectedEntrenador.email" name="email">
+
+    <label for="entrenador-telefono">Teléfono:</label>
+    <input type="tel" id="entrenador-telefono" [(ngModel)]="selectedEntrenador.telefono" name="telefono">
+
+    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+      {{ isUpdatingEntrenador ? 'Actualizar' : 'Crear' }}
+    </button>
+  </form>
+
+  <h2 class="text-xl font-bold mb-2">Lista de Entrenadores</h2>
+  <ul>
+    <li *ngFor="let entrenador of entrenadores" (click)="selectEntrenador(entrenador)" class="bg-white shadow-md p-4 mb-4 rounded">
+      {{ entrenador.nombre }} {{ entrenador.apellido }}
+      <div>
+        <button (click)="verEntrenador(entrenador)" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded ml-2">
+          Ver
+        </button>
+        <button (click)="editarEntrenador(entrenador)" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded ml-2">
+          Editar
+        </button>
+        <button (click)="deleteEntrenador(entrenador.id)" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded ml-2">
+          Eliminar
+        </button>
+      </div>
+    </li>
+  </ul>
+
+</div>

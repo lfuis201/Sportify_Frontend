@@ -1,0 +1,41 @@
+/* Estilos generales */
+.container {
+  max-width: 800px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido */
+  padding: 2rem; /* Espaciado interno */
+}
+
+/* Estilos para los elementos de lista */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f3f4f6; /* Color de fondo del elemento de lista */
+  border: 1px solid #e2e8f0; /* Color del borde del elemento de lista */
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li:hover {
+  background-color: #e5e7eb; /* Cambiar color de fondo al pasar el cursor */
+}
+
+ul li button {
+  background-color: #f9fafb; /* Color de fondo del botón */
+  color: #6b7280; /* Color del texto del botón */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li button:hover {
+  background-color: #f3f4f6; /* Cambiar color de fondo al pasar el cursor */
+}
