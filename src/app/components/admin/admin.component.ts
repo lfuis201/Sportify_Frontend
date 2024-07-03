@@ -51,6 +51,24 @@ export class AdminComponent implements OnInit {
     this.isUpdatingEntrenador = true;
   }
 
+  verDeporte(deporte: any): void {
+    console.log('Ver deporte:', deporte);
+    // Aquí puedes añadir lógica para ver los detalles del deporte
+  }
+
+  editarDeporte(deporte: any): void {
+    this.selectDeporte(deporte);
+  }
+
+  verEntrenador(entrenador: any): void {
+    console.log('Ver entrenador:', entrenador);
+    // Aquí puedes añadir lógica para ver los detalles del entrenador
+  }
+
+  editarEntrenador(entrenador: any): void {
+    this.selectEntrenador(entrenador);
+  }
+
   onSubmitDeporte(): void {
     if (this.isUpdatingDeporte) {
       // Actualizar deporte

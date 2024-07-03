@@ -1,0 +1,27 @@
+<div class="text-primary-foreground p-4 rounded-lg shadow-lg">
+  <h2 class="text-2xl text-white font-bold mb-4">Create New Event</h2>
+  <form class="grid grid-cols-1 gap-4" (ngSubmit)="onSubmit()">
+    <label for="event-name" class="block text-white text-sm font-medium">Event Name</label>
+    <input id="event-name" type="text" class="w-full px-3 py-2 rounded-lg border focus:outline-none focus:ring focus:ring-primary" placeholder="Enter event name" [(ngModel)]="eventName" name="eventName" required />
+
+    <label for="event-date" class="block text-white text-sm font-medium">Event Date</label>
+    <input id="event-date" type="date" class="w-full px-3 py-2 rounded-lg border focus:outline-none focus:ring focus:ring-primary" [(ngModel)]="eventDate" name="eventDate" required />
+
+    <label for="event-description" class="block text-white text-sm font-medium">Event Description</label>
+    <textarea id="event-description" class="w-full px-3 py-2 rounded-lg border focus:outline-none focus:ring focus:ring-primary" placeholder="Enter event description" [(ngModel)]="eventDescription" name="eventDescription"></textarea>
+
+    <label for="event-instalacion" class="block text-white text-sm font-medium">Select Installation</label>
+    <select id="event-instalacion" class="w-full px-3 py-2 rounded-lg border focus:outline-none focus:ring focus:ring-primary" [(ngModel)]="selectedInstalacion" name="selectedInstalacion" required>
+      <option value="" disabled selected>Select an installation</option>
+      <option *ngFor="let instalacion of instalaciones" [value]="instalacion.id">{{ instalacion.nombre }}</option>
+    </select>
+
+    <label for="event-federacion" class="block text-white text-sm font-medium">Select Federation</label>
+    <select id="event-federacion" class="w-full px-3 py-2 rounded-lg border focus:outline-none focus:ring focus:ring-primary" [(ngModel)]="selectedFederacion" name="selectedFederacion" required>
+      <option value="" disabled selected>Select a federation</option>
+      <option *ngFor="let federacion of federaciones" [value]="federacion.id">{{ federacion.nombre }}</option>
+    </select>
+
+    <button type="submit" class="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-primary/80">Create Event</button>
+  </form>
+</div>

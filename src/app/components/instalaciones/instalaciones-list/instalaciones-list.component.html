@@ -1,0 +1,13 @@
+<div class="bg-gray-200 p-4 rounded shadow-lg">
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Listado de Instalaciones</h2>
+    <ul>
+        <li *ngFor="let instalacion of instalaciones" class="bg-white rounded-lg shadow-md p-4 mb-2">
+            <span class="block text-gray-800 font-bold">{{ instalacion.nombre }}</span>
+            <span class="block text-gray-600">{{ instalacion.tipo }}</span>
+            <span class="block text-gray-600">{{ instalacion.direccion }}</span>
+            <span class="block text-gray-600">Capacidad: {{ instalacion.capacidad }}</span>
+            <span class="block text-gray-600">Precio: {{ instalacion.precio }}</span>
+            <span class="block text-gray-600">Encargado: {{ instalacion.encargado }}</span>
+        </li>
+    </ul>
+</div>

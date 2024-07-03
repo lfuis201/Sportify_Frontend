@@ -1,0 +1,11 @@
+<!-- evento-list.component.html -->
+<div class="bg-gray-200 p-4 rounded shadow-lg">
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Listado de Eventos</h2>
+    <ul>
+      <li *ngFor="let evento of eventos" class="bg-white rounded-lg shadow-md p-4 mb-2">
+        <span class="block text-gray-800 font-bold">{{ evento.nombre }}</span>
+        <span class="block text-gray-600">{{ evento.fecha }}</span>
+      </li>
+    </ul>
+  </div>
+  

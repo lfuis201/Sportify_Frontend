@@ -1,122 +1,110 @@
-<p>evento works!</p>
-
-
-
-
-<div class="flex h-screen">
-    <div class="bg-secondary text-secondary-foreground w-64 p-4 flex flex-col justify-between">
-      <div>
-        <div class="text-center mb-4">
-          <h2 class="text-lg font-bold">Lista de acciones</h2>
-          <img src="https://placehold.co/100x100" alt="Winner Avatar" class="rounded-full mx-auto my-2" />
-          <p class="text-primary">Eventos principales</p>
-        </div>
-        <nav class="space-y-2">
-          <a href="#" class="flex items-center p-2 bg-primary text-primary-foreground rounded-lg">
-            <img src="https://placehold.co/24x24?text=🏠" alt="Home Icon" class="mr-2" />
-            Home
-          </a>
-          <a href="#" class="flex items-center p-2 rounded-lg hover:bg-muted">
-            <img src="https://placehold.co/24x24?text=📺" alt="Live Icon" class="mr-2" />
-            Live
-          </a>
-          <a href="#" class="flex items-center p-2 rounded-lg hover:bg-muted">
-            <img src="https://placehold.co/24x24?text=🎮" alt="Games Icon" class="mr-2" />
-            Games
-          </a>
-        </nav>
-        <div class="mt-4">
-          <a href="#" class="flex items-center p-2 rounded-lg hover:bg-muted">
-            <img src="https://placehold.co/24x24?text=🔥" alt="Valorant Icon" class="mr-2" />
-            Valorant
-          </a>
-          <a href="#" class="flex items-center p-2 rounded-lg hover:bg-muted">
-            <img src="https://placehold.co/24x24?text=🔫" alt="CSGO Icon" class="mr-2" />
-            CS&GO
-          </a>
-          <a href="#" class="flex items-center p-2 rounded-lg hover:bg-muted">
-            <img src="https://placehold.co/24x24?text=🗡️" alt="BrawlHalla Icon" class="mr-2" />
-            BrawlHalla
-          </a>
-          <a href="#" class="flex items-center p-2 rounded-lg hover:bg-muted">
-            <img src="https://placehold.co/24x24?text=➕" alt="More Game Icon" class="mr-2" />
-            More Game
-          </a>
-        </div>
-      </div>
+<div class="min-h-screen flex flex-col bg-[var(--background)] text-[var(--foreground)]">
+  <header class="flex items-center justify-between bg-purple-900 p-4">
+    <div class="flex items-center space-x-2">
+      <h1 class="text-white text-xl font-bold">Sportify</h1>
     </div>
-  
-    <div class="flex-1 bg-background text-foreground p-4">
-      <div class="bg-primary text-primary-foreground p-4 rounded-lg mb-4 flex items-center justify-between">
-        <div>
-          <h3 class="text-lg font-bold">The only address for tournaments.</h3>
-        </div>
-        <img src="https://placehold.co/100x100" alt="Banner Image" class="rounded-lg" />
-      </div>
-  
-      <div>
-        <h4 class="text-lg font-bold mb-2">Live Channel</h4>
-        <div class="bg-card text-card-foreground p-4 rounded-lg flex space-x-4 overflow-x-auto">
-          <div class="text-center">
-            <img src="https://placehold.co/50x50" alt="Live Stream 1" class="rounded-full mb-2" />
-            <p>45.235</p>
-          </div>
-          <div class="text-center">
-            <img src="https://placehold.co/50x50" alt="Live Stream 2" class="rounded-full mb-2" />
-            <p>75.458</p>
-          </div>
-          <div class="text-center">
-            <img src="https://placehold.co/50x50" alt="Live Stream 3" class="rounded-full mb-2" />
-            <p>15.084</p>
-          </div>
-          <div class="text-center">
-            <img src="https://placehold.co/50x50" alt="Live Stream 4" class="rounded-full mb-2" />
-            <p>1.782</p>
-          </div>
-          <div class="text-center">
-            <img src="https://placehold.co/50x50" alt="Live Stream 5" class="rounded-full mb-2" />
-            <p>2.563</p>
-          </div>
-        </div>
-      </div>
-  
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-        <div class="bg-primary text-primary-foreground p-4 rounded-lg">
-          <h5 class="font-bold">Build your team and start the tournaments.</h5>
-          <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-        </div>
-        <div class="bg-accent text-accent-foreground p-4 rounded-lg">
-          <h5 class="font-bold">Become and E-Sportsman that passes the qualifiers and is yours.</h5>
-          <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-        </div>
-        <div class="bg-destructive text-destructive-foreground p-4 rounded-lg">
-          <h5 class="font-bold">Be the world champion. Win the prize money.</h5>
-          <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-        </div>
-        <div class="bg-secondary text-secondary-foreground p-4 rounded-lg">
-          <h5 class="font-bold">Come on, choose one of the games and get started.</h5>
-          <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-        </div>
-      </div>
+    <div class="flex items-center space-x-4">
+      <input type="text" placeholder="Search Game and E-Sports Team" class="bg-zinc-800 text-white p-2 rounded-lg" />
+      <span class="text-white">100,00 €</span>
+      <img src="https://placehold.co/30x30" alt="User Avatar" class="h-8 rounded-full" />
     </div>
-  
-    <div class="bg-secondary text-secondary-foreground w-64 p-4">
-      <h4 class="text-lg font-bold mb-4">Live Statistics</h4>
-      <div class="space-y-4">
-        <div>
-          <img src="https://placehold.co/24x24?text=🔥" alt="Valorant Icon" class="inline-block mr-2" />
-          <p>KT 0 - 1 MP</p>
-          <p>ALE 3 - 0 KOM</p>
-          <p>OME 0 - 5 POL</p>
-          <p>PLE 2 - 1 VFB</p>
-        </div>
-        <div>
-          <img src="https://placehold.co/24x24?text=🔫" alt="CSGO Icon" class="inline-block mr-2" />
-          <p>KT 0 - 1 MP</p>
-          <p>ALE 3 - 0 KOM</p>
-          <p>OME 0 - 5 POL</p>
-          <p>PLE 2 - 1 VFB</p>
-        </div>
+  </header>
+  <div class="flex flex-1">
+    <aside class="w-64 bg-purple-800 p-4">
+      <div class="mb-8">
+        <h2 class="text-white text-lg font-bold mb-2">This Month Winner</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class=" mx-auto mb-2" width="100" height="100" viewBox="0 0 128 128"><path fill="#FEC417" d="M97.12 59.35c2.22-1.83 15.04-9.76 22.06-16.44c5.48-5.22 7.6-18.85-.83-25.48c-10.96-8.61-21.48.43-21.48.43s-.92-5.11-7.32-8.11c-8.06-3.78-18.27-5.19-27.66-5.07c-9.1.11-17.48 1.21-24.92 4.86c-6.66 3.27-7.06 7.93-7.06 7.93s-8.74-8.35-19.45-1.57C-.24 22.69 2.83 36.29 7.98 42c6.71 7.44 14.77 11.23 18.43 13.97c3.65 2.74 7.15 5.35 7.15 7.7c0 2.35-1.04 2.87-1.44 2.74c-.39-.13-1.08-2.42-2.87-1.44c-2.44 1.35-1.7 6.79 3.39 7.31c4.93.51 5.87-4.7 5.87-4.7l.78-5.09l8.09 5.61l8.87 7.31l-.26 6.26s-.39 4.83-2.74 9.01s-6.13 8.35-6.13 8.35l-.12 3.78l32.89-.78l-1.04-3.65s-4.24-4.66-6.79-9.66c-1.82-3.58-2.11-7.19-2.11-7.19l-.08-8.98l17.07-10.46s1.83 1.44 1.57 1.96s-.32 5.85 3.78 7.83c4.05 1.96 7.31-.52 6.92-3.92c-.39-3.39-2.48-2.22-3.13-1.7c-.65.52-2.09.65-2.48-1.31c-.4-1.94 1.3-3.77 3.52-5.6M13.09 40.89l-3.91-11.9l4.73-6.19l5.3-1.55s6.77 5.05 7.01 5.46c.24.41 4.32 8.8 4.32 8.8l5.38 19.48zm76.86 15.65c.08-.41 5.05-20.87 5.05-20.87c0-.24 3.5-1.87 3.5-2.2c0-.33 6.36-10.68 6.36-10.68l10.6.41l2.2 10.51l-5.3 8.72c.01.01-22.49 14.51-22.41 14.11"/><path fill="#FFA828" d="M119.92 30.64c-.78-9.32-10-11.55-13.79-10.2s-6.25 3.88-7.09 7.48c-.68 2.91-1.36 4.85-2.14 5.15c-.86.32-1.65.19-1.65.19s-.14-6.3-.1-8.84c.1-5.24 1.7-6.58 1.7-6.58s-.34-1.77-1.02-2.75c-.68-.97-1.94-2.23-1.94-2.23s.29 2.52-.97 3.11s-2.62-.29-2.62-.29l1.26 5.24s-2.04 26.12-2.23 26.7c-.19.58-7.86 13.88-7.86 13.88s-4.47 4.18-6.6 5.15c-2.14.97-3.98 3.5-12.23 3.59c-8.25.1-15.34-6.41-15.34-6.41l-7.09-6.8l-5.24-15.44l-.78-15.73l.33-5.72l.23-2.39l-.37-1.21s-.68.68-1.94.39c-1.26-.29-1.75-1.94-1.75-1.94s-.49.78-.58 1.17c-.1.39-.2 1.29-.2 1.29s1.36 1.43 1.65 3.47c.29 2.04-.1 10.49-1.55 10.29c-1.46-.19-.98-7.28-6.51-10c-4.79-2.36-11.94-1.65-14.86 4.27c-2.91 5.92-.78 12.91 8.35 19.42s18.85 11.98 20.39 17.2c1.84 6.21-2.33 9.9-2.33 9.9s3.03-.42 4.52-3.67c.48-1.05.66-2.58.73-3.49c3.45 4.5 8.04 8.31 14.12 10.15c2.3.79 4.89 1.19 8.49 1.19c.52 0 1.03-.02 1.54-.04c4.21-.15 7.81-.94 11.3-2.67c4.71-2.18 8.36-5.51 11.18-9.29c-.08.9.47 3.14 1.52 4.91c1.84 3.11 4.95 3.3 4.95 3.3s-4.27-2.52-3.4-8.54c.87-6.02 4.85-8.16 10.87-12.04c6.04-3.89 19.82-11.85 19.05-21.17M21.27 43.85c-2.71-1.91-7.46-4.46-9.42-8.35c-2.61-5.19-.49-11.46 4.47-12.23c10.3-1.62 10.49 11.17 11.17 12.72c.68 1.55 2.62 1.65 2.62 1.65s.07.86.35 2.52c.01.05.02.09.02.14l.03.15c.19 1.13.46 2.54.84 4.15l.03.12c.21.91.43 1.77.66 2.56c.46 1.66 1.02 3.45 1.71 5.29c-1-.68-6.73-4.65-12.48-8.72m93.31-7.19c-2.15 3.48-6.5 6.07-9.71 8.25c-4.14 2.81-10.3 7.03-12.04 8.21c.4-1.06.75-2.11 1.07-3.14c.52-1.36 1.07-3.02 1.45-4.81c1-4.7 1.17-8.81 1.17-8.81s2.04.58 3.3-.78c1.26-1.36 1.73-5.58 2.91-7.57c1.84-3.11 5.53-6.31 11.07-2.43c3.2 2.25 3.32 6.96.78 11.08M60.52 79.31l5.65-.07s.15 6.17 1.04 10.77c.89 4.61 2.08 9.73 2.08 9.73s-11.51 3.86-11.44-.3s1.78-12.26 1.78-12.26s1.04-9.65.89-7.87"/><path fill="#FFA828" d="M51.04 15.19s6.29-.71 12.14-.62s11.87 1.24 11.87 1.24s-.35 19.58-1.42 30.57c-1.06 10.99-5.22 19.22-6.33 21.55c-1.07 2.26-1.85 3.47-1.85 3.47l-5.64-.66l-9.75-19.58z"/><path fill="#FFEFAB" d="M43.51 18.12s1.77-.89 4.34-1.86c2.33-.88 4.43-1.15 4.43-1.15s.06 12.98.27 22.24c.18 7.89 3.1 20.82 4.52 24.28c1.42 3.46 3.98 8.74 3.98 8.74s-5.15-.74-8.32-4.76c-1.67-2.12-9.48-18.52-9.75-29.33s.79-18.43.53-18.16"/><path fill="#FFFCFD" d="M40.58 19.62c-.18.53-1.59 11.7.62 22.06s5.48 17.45 7.64 20.26c1.92 2.49 3.17 3.67 3.88 3.67s-2.92-8.59-4.61-15.33c-1.68-6.73-2.57-14.8-2.75-18.78c-.18-3.99-.35-14.27-.35-14.27s-1.95.89-2.39 1.15c-.44.27-2.04 1.24-2.04 1.24"/><path fill="#FFEFAB" d="M53.34 99.01s3.81-6.2 4.61-10.9c.8-4.7 1.24-8.86 1.24-8.86l2.36.1s-.23 6.81-.5 11.42s-1.06 9.13-1.06 9.13z"/><path fill="#D1701C" d="M56.27 75.41s1.77-1.73 6.64-1.73s6.96 1.87 6.96 1.87l.13 6.01s-3.24-1.01-7.18-1.06c-3.28-.04-6.81 1.18-6.81 1.18zM35 15.72c.82-.76 8.68-6.66 27.29-6.82c20.02-.18 27.53 5.62 28 5.94c.53.35 1.15 1.95.89 2.66c-.27.71-.8.97-2.3.35c-1.51-.62-8.95-6.05-26.85-5.49c-17.19.53-24.48 5.76-25.25 6.2c-.62.35-1.77.44-2.3-.27c-.54-.7-.01-2.07.52-2.57m56.18 4.17c-2.3.18-.71 18.7-5.58 30.3c-5.22 12.41-11.88 15.95-11.61 16.66c.27.71 6.79-1.26 10.9-7.09c3.81-5.4 6.11-10.19 7.18-16.57c1.05-6.38 1.67-23.5-.89-23.3m-56.67 2.12c-.58-.03.01 9.21-.93 13.27c-.36 1.56-1.24 1.88-1.33 2.23c-.09.35 1.93 12.24 5.32 17.46c3.28 5.05 9.75 11.34 10.81 10.28c1.06-1.06-4.7-4.61-8.59-12.32c-2.24-4.42-4.52-11.08-4.61-18.7c-.06-5.04.57-12.15-.67-12.22"/><path fill="#865C50" d="m86.77 112.71l-.01-14.29H40.89c.14 0 .03 11.62.01 14.34h-6.52v10.35h58.25v-10.35z"/><path fill="#FCC219" d="M55.59 105.93c-1.13-.05-2.43.18-2.48 1.58s-.05 5.45-.05 6.22c0 .77.63 1.44 2.21 1.49c1.58.05 16.41 0 17.45 0c1.04 0 1.58-.9 1.62-1.8c.05-.9-.05-4.69-.05-5.72c0-1.71-1.53-1.71-2.57-1.71c-1.12-.02-16.13-.06-16.13-.06"/></svg>
+        <p class="text-teal-400 text-center">Chente Team</p>
       </div>
-    </div>
+      <nav class="space-y-4">
+        <a href="#" class="flex items-center text-white space-x-2">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M5 12H3l9-9l9 9h-2M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
+              <path d="M9 21v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6" />
+            </g>
+          </svg>
+
+          <span>Home</span>
+        </a>
+        <a href="#" class="flex items-center text-white space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#ffffff"
+              d="m9.2 23.9l-1.75-1l3-5.2l-1.7-1l-1.5 2.6l-1.75-1l5.15-8.9q-.95-.975-1.425-2.225T8.75 4.6q0-.9.225-1.787T9.7 1.1l1.7 1q-.35.575-.5 1.188t-.15 1.262q0 1.325.65 2.488T13.25 8.9l2.25 1.3q1.55.9 2.275 2.588t.725 3.162q0 .95-.25 1.85t-.7 1.7l-1.75-1q.35-.6.5-1.225T16.45 16q0-.8-.225-1.55t-.725-1.4zM16 9q-.825 0-1.412-.587T14 7t.588-1.412T16 5t1.413.588T18 7t-.587 1.413T16 9m-2.5-5q-.65 0-1.075-.45T12 2.5q0-.65.45-1.075T13.5 1q.65 0 1.075.45T15 2.5q0 .65-.45 1.075T13.5 4" />
+          </svg> <span>Deportes</span>
+        </a>
+        <button type="button" (click)="mostrarFormulario()" class="flex items-center text-white space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#ffffff"
+              d="M12 14q-.425 0-.712-.288T11 13t.288-.712T12 12t.713.288T13 13t-.288.713T12 14m-4 0q-.425 0-.712-.288T7 13t.288-.712T8 12t.713.288T9 13t-.288.713T8 14m8 0q-.425 0-.712-.288T15 13t.288-.712T16 12t.713.288T17 13t-.288.713T16 14m-4 4q-.425 0-.712-.288T11 17t.288-.712T12 16t.713.288T13 17t-.288.713T12 18m-4 0q-.425 0-.712-.288T7 17t.288-.712T8 16t.713.288T9 17t-.288.713T8 18m8 0q-.425 0-.712-.288T15 17t.288-.712T16 16t.713.288T17 17t-.288.713T16 18M5 22q-.825 0-1.412-.587T3 20V6q0-.825.588-1.412T5 4h1V2h2v2h8V2h2v2h1q.825 0 1.413.588T21 6v14q0 .825-.587 1.413T19 22zm0-2h14V10H5z" />
+          </svg>
+          <span>Eventos</span>
+        </button>
+
+        <button type="button" (click)="mostrarFormFederaciones()" class="flex items-center text-white space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="#ffffff" d="M212 96a27.8 27.8 0 0 0-10.51 2L171 59.94A28 28 0 1 0 120 44a29 29 0 0 0 .15 2.94L73.68 66.3a28 28 0 1 0-28.6 44.83l1.85 46.38a28 28 0 1 0 32.74 41.42L128 212.47a28 28 0 1 0 49.13-18.79l27.21-42.75A28 28 0 1 0 212 96m-56 88h-.89l-16.18-48.53l46.65-2.22a27.9 27.9 0 0 0 5.28 9L163.65 185a28 28 0 0 0-7.65-1m-93.08-27.13l-1.85-46.38a28 28 0 0 0 10.12-6.13L113.72 129l-41.46 32.22a28 28 0 0 0-9.34-4.35M149.57 72a27.8 27.8 0 0 0 8.94-2L189 108.06a27.9 27.9 0 0 0-4.18 9.22l-46.57 2.22ZM82.09 173.85L124 141.26l15.94 47.83a28.2 28.2 0 0 0-7.6 8L84 183.53a28 28 0 0 0-1.91-9.68M148 32a12 12 0 1 1-12 12a12 12 0 0 1 12-12m-21.68 29.7a28.4 28.4 0 0 0 7.68 6.54l-11.3 47.45l-43.47-25.17A28 28 0 0 0 80 84a29 29 0 0 0-.15-2.94ZM40 84a12 12 0 1 1 12 12a12 12 0 0 1-12-12m16 112a12 12 0 1 1 12-12a12 12 0 0 1-12 12m100 28a12 12 0 1 1 12-12a12 12 0 0 1-12 12m56-88a12 12 0 1 1 12-12a12 12 0 0 1-12 12"/></svg>
+          <span>Federaciones</span>
+        </button>
+
+        <button type="button" (click)="mostrarFormInstalaciones()" class="flex items-center text-white space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" d="M12 3.5c-2.663 0-5.323-.189-7.96-.566L1 2.5H.5v19H1l3.04-.434A56.277 56.277 0 0 1 12 20.5m0-17c2.663 0 5.323-.189 7.96-.566L23 2.5h.5v19H23l-3.04-.434A56.276 56.276 0 0 0 12 20.5m0-17V9m0 11.5V15M.5 7.5H1a4.5 4.5 0 0 1 0 9H.5m23 0H23a4.5 4.5 0 1 1 0-9h.5M12 9a3 3 0 1 1 0 6m0-6a3 3 0 1 0 0 6"/></svg>
+          <span>Instaciones</span>
+        </button>
+
+      </nav>
+      <div class="mt-8">
+        <h3 class="text-white text-sm mb-2">Games</h3>
+        <ul class="space-y-2">
+          <li class="flex items-center text-white space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+              <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2"
+                stroke-width="4">
+                <path
+                  d="M17.817 4.98C7.31 8.39 1.57 19.677 4.98 30.176c3.41 10.498 14.698 16.247 25.196 12.838c10.508-3.41 16.247-14.698 12.838-25.196C39.603 7.309 28.315 1.57 17.817 4.98" />
+                <path d="m34 21l-10-8l-10 8l4 12h12zm0 0l9-3m-7 22l-6-7m-12 0l-6 7m2-19l-9-3m19-5V4" />
+              </g>
+            </svg> <span>Futbol</span>
+            <span>Futbol</span>
+          </li>
+          <li class="flex items-center text-white space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0" />
+                <path d="M12 12a8 8 0 0 0 8 4M7.5 13.5A12 12 0 0 0 16 20" />
+                <path d="M12 12a8 8 0 0 0-7.464 4.928m8.415-9.575a12 12 0 0 0-9.88 4.111" />
+                <path d="M12 12a8 8 0 0 0-.536-8.928m4.085 12.075a12 12 0 0 0 1.38-10.611" />
+              </g>
+            </svg> <span>Voley</span>
+          </li>
+          <li class="flex items-center text-white space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+              <path fill="#ffffff"
+                d="M256 16A240 240 0 0 0 86.294 425.706A240 240 0 0 0 425.706 86.294A238.432 238.432 0 0 0 256 16m-148.239 94.25q4.21 5.825 8.145 12.466c18.663 31.593 29.823 72.765 31.985 117.284H48.609a207.386 207.386 0 0 1 59.152-129.75m0 291.5A207.386 207.386 0 0 1 48.609 272h99.282c-2.162 44.519-13.322 85.691-31.985 117.284q-3.925 6.646-8.145 12.466M240 463.391a206.866 206.866 0 0 1-108.049-40.532a190.612 190.612 0 0 0 11.507-17.3c21.483-36.368 34.233-83.3 36.471-133.559H240ZM240 240h-60.071c-2.238-50.257-14.988-97.191-36.471-133.559a190.612 190.612 0 0 0-11.507-17.3A206.866 206.866 0 0 1 240 48.609Zm32-191.391a206.866 206.866 0 0 1 108.049 40.532a190.612 190.612 0 0 0-11.507 17.3c-21.483 36.368-34.233 83.3-36.471 133.559H272Zm0 414.782V272h60.071c2.238 50.257 14.988 97.191 36.471 133.559a190.612 190.612 0 0 0 11.507 17.3A206.866 206.866 0 0 1 272 463.391m132.239-61.641q-4.21-5.824-8.145-12.466c-18.663-31.593-29.823-72.765-31.985-117.284h99.282a207.386 207.386 0 0 1-59.152 129.75M364.109 240c2.162-44.519 13.322-85.691 31.985-117.284q3.925-6.646 8.145-12.466A207.386 207.386 0 0 1 463.391 240Z" />
+            </svg> <span>Basket</span>
+            <span>Basket</span>
+          </li>
+
+        </ul>
+      </div>
+    </aside>
+
+    <main class="flex-1 bg-black p-4">
+
+
+
+      <app-evento-form *ngIf="mostrarEventoFormulario"></app-evento-form>
+      <app-instalaciones-form *ngIf="mostrarEventoForInstalaciones"></app-instalaciones-form>
+      <app-federaciones-form *ngIf="mostrarEventoForFederaciones"></app-federaciones-form>
+
+    </main>
+
+    <aside class="w-64 bg-purple-800 p-4">
+      
+      <app-evento-list *ngIf="mostrarEventoFormulario"></app-evento-list>
+      <app-instalaciones-list *ngIf="mostrarEventoForInstalaciones"></app-instalaciones-list>
+      <app-federaciones-list *ngIf="mostrarEventoForFederaciones"></app-federaciones-list>
+
+    </aside>
   </div>
+</div>

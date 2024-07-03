@@ -1,0 +1,17 @@
+<div class="text-primary-foreground p-4 rounded-lg shadow-lg">
+    <h2 class="text-2xl text-white font-bold mb-4">Create New Federation</h2>
+    <form class="grid grid-cols-1 gap-4" (ngSubmit)="onSubmit()">
+      <label for="federation-name" class="block text-white text-sm font-medium">Federation Name</label>
+      <input id="federation-name" type="text" class="w-full px-3 py-2 rounded-lg border focus:outline-none focus:ring focus:ring-primary"
+             placeholder="Enter federation name" name="federationName" [(ngModel)]="nombre" required />
+      <div *ngIf="!nombre" class="text-red-600">Federation Name is required</div>
+  
+      <label for="federation-description" class="block text-white text-sm font-medium">Federation Description</label>
+      <textarea id="federation-description" class="w-full px-3 py-2 rounded-lg border focus:outline-none focus:ring focus:ring-primary"
+                placeholder="Enter federation description" name="federationDescription" [(ngModel)]="descripcion" required></textarea>
+      <div *ngIf="!descripcion" class="text-red-600">Federation Description is required</div>
+descripcion
+      <button type="submit" class="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-primary/80">Create Federation</button>
+    </form>
+  </div>
+  
